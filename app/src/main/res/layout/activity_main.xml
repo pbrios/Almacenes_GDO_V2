@@ -9,11 +9,15 @@
     <EditText
         android:id="@+id/edtUser"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/ancho_input"
+        android:layout_marginTop="@dimen/separador_grande"
+        android:background="@drawable/input_custom"
         android:drawableStart="@drawable/ic_person_30"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="@string/usuario"
         android:inputType="textPersonName"
+        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,23 +25,28 @@
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_height="@dimen/ancho_input"
+        android:layout_marginTop="@dimen/separador_grande"
+        android:background="@drawable/input_custom"
         android:drawableStart="@drawable/ic_key_30"
+        android:drawablePadding="10dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:paddingLeft="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtUser" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="@dimen/separador_grande"
         android:text="@string/login"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
-        tools:layout_editor_absoluteX="159dp" />
+        app:icon="@drawable/ic_lock_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>

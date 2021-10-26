@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginEnd="@dimen/separador_mediano"
+        android:layout_marginRight="@dimen/separador_mediano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/almaceno"
+            android:textSize="@dimen/texto_grande"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/spAlmacenOT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spAlmacenOT" />
+
+        <Spinner
+            android:id="@+id/spAlmacenOT"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginTop="@dimen/separador_mediano"
+        android:layout_marginEnd="@dimen/separador_mediano"
+        android:layout_marginRight="@dimen/separador_mediano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/almacend"
+            android:textSize="@dimen/texto_grande"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/spAlmacenDT"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spAlmacenDT" />
+
+        <Spinner
+            android:id="@+id/spAlmacenDT"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.almacenesgdov2.fragments.BusquedaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginTop="@dimen/separador_chico"
+        android:layout_marginEnd="@dimen/separador_mediano"
+        android:layout_marginRight="@dimen/separador_mediano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <TextView
+        android:id="@+id/txvCodigoT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginTop="@dimen/separador_mediano"
+        android:hint="@string/codigo"
+        android:textSize="@dimen/texto_grande"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <TextView
+        android:id="@+id/txvDescripconT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginTop="@dimen/separador_chico"
+        android:hint="@string/descripcion"
+        android:textSize="@dimen/texto_grande"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCodigoT"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separador_mediano"
+        android:layout_marginLeft="@dimen/separador_mediano"
+        android:layout_marginTop="@dimen/separador_mediano"
+        android:layout_marginEnd="@dimen/separador_mediano"
+        android:layout_marginRight="@dimen/separador_mediano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvDescripconT">
+
+        <EditText
+            android:id="@+id/edtCantidadT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cantidad"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/texto_grande"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txvUnidadT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/separador_chico"
+            android:layout_marginLeft="@dimen/separador_chico"
+            android:hint="Unidad"
+            android:textSize="@dimen/texto_grande"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/edtCantidadT"
+            app:layout_constraintStart_toEndOf="@+id/edtCantidadT"
+            app:layout_constraintTop_toTopOf="@+id/edtCantidadT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnGuardarT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/separador_mediano"
+        android:src="@drawable/ic_save_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnListaMovimientosT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/separador_mediano"
+        android:layout_marginRight="@dimen/separador_mediano"
+        android:clickable="true"
+        android:src="@drawable/ic_paste_search_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

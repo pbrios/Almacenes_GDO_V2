@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Codigo"
+            android:paddingLeft="5dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtCDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion"
+            android:paddingLeft="5dp"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtCCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtCUnidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Unidad"
+                android:paddingLeft="5dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

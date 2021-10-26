@@ -4,4 +4,21 @@
     <string name="usuario">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Ingresar</string>
+    <string name="title_activity_menu">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="codigo">Codigo</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="unidad">Unidad</string>
+    <string name="tipo_busqueda">Tipo busqueda</string>
+    <string name="almaceno">Almacen origen</string>
+    <string name="almacend">Almacen destino</string>
+    <string name="cantidad">Cantidad</string>
+
+    <string name="servername">http://www.distribuciongdo.site/conexiones/</string>
+
+    <string name="seleccion">Selecciona Producto</string>
+
 </resources>
