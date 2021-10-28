@@ -5,9 +5,9 @@
     <string name="password">Contraseña</string>
     <string name="login">Ingresar</string>
     <string name="title_activity_menu">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Traspasos</string>
+    <string name="title_dashboard">Inventarios</string>
+    <string name="title_notifications">Compras</string>
 
     <string name="codigo">Codigo</string>
     <string name="descripcion">Descripcion</string>
@@ -20,5 +20,6 @@
     <string name="servername">http://www.distribuciongdo.site/conexiones/</string>
 
     <string name="seleccion">Selecciona Producto</string>
+    <string name="movimientos">Movimientos</string>
 
 </resources>

@@ -35,7 +35,7 @@ public class BusquedaFragment extends Fragment implements View.OnClickListener{
     private String servidor;
     private ImageButton btnCamara, btnBusqueda;
     private CheckBox chTipoBusqueda;
-    //private ProductosData productosData = new ProductosData();
+    private ProductosData productosData = new ProductosData();
     private Productos producto;
 
     private void inicializa(View v){
@@ -89,8 +89,8 @@ public class BusquedaFragment extends Fragment implements View.OnClickListener{
     }
 
     private void busquedaTexto(String codigo){
-        //productosData.setBusqueda(codigo);
-        //productosData.show(getChildFragmentManager(), "sdasda");
+        productosData.setBusqueda(codigo);
+        productosData.show(getChildFragmentManager(), "sdasda");
     }
 
     public void escanear(){
@@ -124,6 +124,9 @@ public class BusquedaFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_busqueda, container, false);
+
+        inicializa(root);
+
         return root;
     }
 

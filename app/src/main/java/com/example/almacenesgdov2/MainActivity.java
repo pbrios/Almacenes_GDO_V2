@@ -58,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
         edtPassword = findViewById(R.id.edtPassword);
         btnLogin = findViewById(R.id.btnLogin);
 
+        edtUser.setText("cuno");
+        edtPassword.setText("pablo1");
+
         servidor = getString(R.string.servername);
         almacenesArrayList = new ArrayList<Almacenes>();
         listaAlmacenes();

@@ -17,8 +17,10 @@
         tools:targetApi="m">
         <activity
             android:name=".Menu"
-            android:label="@string/title_activity_menu"></activity>
-        <activity android:name=".MainActivity">
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
