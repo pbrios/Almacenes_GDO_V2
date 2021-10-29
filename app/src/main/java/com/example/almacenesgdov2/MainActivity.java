@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 btnLogin.setEnabled(false);
                 validaUsuario(servidor+"loginApps.php");
-            }
+            } 
         });
     }
 

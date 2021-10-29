@@ -155,10 +155,13 @@ public class HomeFragment extends Fragment {
         btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                btnGuardar.setEnabled(false);
                 if(!idAlmacenO.equals("7") && !idAlmacenD.equals("7") && !idAlmacenO.equals(idAlmacenD) && !edtCantidad.getText().toString().isEmpty() && !txtCodigo.getText().toString().isEmpty())
                     ejecutarServicio();
-                else
+                else{
                     Toast.makeText(getContext(), "Favor de revisar los parametros", Toast.LENGTH_LONG).show();
+                    btnGuardar.setEnabled(true);
+                }
             }
         });
 
@@ -188,7 +191,7 @@ public class HomeFragment extends Fragment {
     private void ejecutarServicio(){
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.getDefault());
         Date date = new Date();
-        final String fecha = dateFormat.format(date);
+        final String fechaI = dateFormat.format(date);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, servidor+"insertar_traspaso.php", new Response.Listener<String>() {
             @Override
@@ -212,7 +215,7 @@ public class HomeFragment extends Fragment {
                 parametros.put("codigo", txtCodigo.getText().toString());
                 parametros.put("cantidad", edtCantidad.getText().toString());
                 parametros.put("almacenD", idAlmacenD);
-                parametros.put("created_at", fecha);
+                parametros.put("created_at", fechaI);
                 return parametros;
             }
         };
